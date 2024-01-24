@@ -24,13 +24,13 @@ describe("the <ul> tag", () => {
     const [firstLi, secondLi, thirdLi] = ul.children;
 
     expect(firstLi).to.have.tagName("li");
-    expect(firstLi).to.contain.text("2 slices of bread");
+    expect(firstLi).to.contain.text("Flutter");
 
     expect(secondLi).to.have.tagName("li");
-    expect(secondLi).to.contain.text("4 slices of cheese");
+    expect(secondLi).to.contain.text("Laravel");
 
     expect(thirdLi).to.have.tagName("li");
-    expect(thirdLi).to.contain.text("1 tbsp of butter");
+    expect(thirdLi).to.contain.text("Vue JS");
   });
 
   it("contains a nested <ul> tag within a <li>", () => {
@@ -40,7 +40,7 @@ describe("the <ul> tag", () => {
       The <ul> must contain another <ul> nested *inside* a <li>:
       <ul>
         <li>
-          4 slices of cheese
+           Laravel
           <ul></ul>
         </li>
       </ul>
@@ -55,11 +55,11 @@ describe("the <ul> tag", () => {
       The *nested* <ul> must contain three nested <li>:
       <ul>
         <li>
-          4 slices of cheese
+           Laravel
           <ul>
-            <li>cheddar</li>
-            <li>mozzarella</li>
-            <li>pepper jack</li>
+          <li>TailWind Css</li>
+          <li>Livewire</li>
+          <li>Vuefiy</li>
           </ul>
         </li>
       </ul>
@@ -86,10 +86,10 @@ describe("the <ol> tag", () => {
     // Check the content of each <li>
     const [first, second, third, fourth, fifth] = ol.querySelectorAll("li");
 
-    expect(first).to.contain.text("Spread butter on bread and frying pan");
-    expect(second).contain.text("Place bread in frying pan and fry");
-    expect(third).contain.text("Add cheese on top of bread");
-    expect(fourth).contain.text("Cover with second slice of bread");
-    expect(fifth).contain.text("Turn over and fry for 2 minutes");
+    expect(first).to.contain.text("C++");
+    expect(second).contain.text("C#");
+    expect(third).contain.text("Java");
+    expect(fourth).contain.text("PHP");
+    expect(fifth).contain.text("JavaScript");
   });
 });
